@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Boyfie 💕</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #e0f7fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 25px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 350px;
+      width: 90%;
+      animation: pop 0.6s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #ff6f91;
+      margin-bottom: 20px;
+    }
+
+    .cat {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #ffb3c6;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff8fab;
+      transform: translateY(-2px);
+    }
+
+    .magic {
+      background: #b28dff;
+    }
+
+    .magic:hover {
+      background: #9a6bff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="step1">
+    <div class="cat">🐱💗</div>
+    <h1>Do you miss your baby princess girlfriend?</h1>
+    <button onclick="nextStep()">Yes I do!</button>
+    <button onclick="nextStep()">YESSSSSSS!</button>
+  </div>
+
+  <div class="card" id="step2" style="display:none;">
+    <div class="cat">🐾✨</div>
+    <h1>Press this button for some magic</h1>
+    <button class="magic" onclick="goMagic()">Magic Button</button>
+  </div>
+
+  <script>
+    function nextStep() {
+      document.getElementById('step1').style.display = 'none';
+      document.getElementById('step2').style.display = 'block';
+    }
+
+    function goMagic() {
+      window.location.href = "https://wa.me/94765408359";
+    }
+  </script>
+
+</body>
+</html>
